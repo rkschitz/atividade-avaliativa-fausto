@@ -1,0 +1,31 @@
+footer {
+    background-color: var(--bg-neutro);
+    position: fixed;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer-bottom {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    height: 30px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0;
+}

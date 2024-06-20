@@ -1,0 +1,111 @@
+.paginaInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  overflow: hidden;
+  margin-bottom: -30px;
+}
+
+.conteudo h1 {
+  font-size: 23px;
+  color: #858585;
+  font: 700 1.5rem "Roboto", sans-serif;
+}
+
+.farmacia {
+  padding: 1rem 3rem;
+  border-top: 2px solid #afafaf;
+}
+
+.conteudo {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 4rem;
+  width: 100%;
+}
+
+.farmacias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  flex-direction: row;
+}
+
+.button-nav {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  word-wrap: break-word;
+  margin-top: 1rem;
+  width: 14rem !important;
+  height: 5rem;
+  border-radius: 30px !important;
+  padding: 1rem 2rem !important;
+  background-color: var(--secundary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.button-nav:hover {
+  background-color: var(--hover-color) !important;
+  color: var(--primary-color) !important;
+}
+
+span {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.medicamentos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #858585;
+  font: 700 1.5rem "Roboto", sans-serif;
+  font-size: 13px;
+  transition: 0.3s;
+  animation: fadeIn 1s;
+  opacity: 1;
+}
+
+.button-right, .button-left {
+  z-index: 1;
+}
+
+.animating {
+  animation: slide 1s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
